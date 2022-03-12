@@ -15,18 +15,19 @@
 			<li><a href="/about">about</a></li>
 		</ul>
 
+		<br>
+
 		<form action="/api/upload.php" method="post" enctype="multipart/form-data">
-			<fieldset>
+			<fieldset style="width: fit-content;">
 				<legend>Upload a video</legend>
-				<input type="file" name="fileToUpload" id="fileToUpload"><br>
-				video name: <input type="text" name="videoName"><br>
-				video description (optional): <textarea name="videoDesc"></textarea><br>
-				uploader name (optional): <input type="text" name="uploaderName"><br>
+				<input type="file" name="fileToUpload" id="fileToUpload" required><br>
+				video name:<br><input style="width: 25vw" type="text" name="videoName" required><br>
+				video description (optional):<br><textarea style="width: 25vw; height: 15vh; resize: none;" name="videoDesc"></textarea><br>
+				uploader name (optional):<br><input style="width: 25vw;" type="text" name="uploaderName"><br><br>
 				<input type="submit" value="upload Video" name="submit">
 			</fieldset>
 		</form>
 
-		<br>
 		<h3>upload notes:</h3>
 		<p>the max upload size is 100mb<br>also the maximum length is 30 minutes<br>accepted types: mp4, mov, webm</p>
 	</body>

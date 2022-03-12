@@ -11,7 +11,7 @@
 	<body>
 		<ul>
 			<li><i>home</i></li>
-			<li><a href="/upload">upload</a>
+			<li><a href="/upload">upload</a></li>
 			<li><a href="/about">about</a></li>
 		</ul>
 		

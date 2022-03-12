@@ -28,10 +28,10 @@
 	<body>
 		<ul>
 			<li><a href="/">home</a></li>
-			<li><a href="/upload">upload</a>
+			<li><a href="/upload">upload</a></li>
 			<li><a href="/about">about</a></li>
 		</ul>
-
+		
 		<div class="video-container">
 			<video controls autoplay>
 				<source src="/uploadedVideos/<?=$vidId . "/video.webm" ;?>">
