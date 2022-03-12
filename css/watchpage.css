@@ -1,0 +1,39 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #d5e7f4;
+}
+
+li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: left;
+	display: inline;
+}
+
+li a {
+	padding: 8px;
+	color: #0000EE;
+	text-align: center;
+}
+
+li i {
+	padding: 8px;
+	text-align: center;
+}
+
+.video-container {
+	top: 0;
+	bottom: 0;
+	padding-top: 8px;
+	width: 60vw;
+	height: max-content;
+}
+
+.video-container video {
+	max-height: 88vh;
+	width: 100%;
+	height: 100%;
+}

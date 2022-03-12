@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/uploadpage.css">
+		<title>phpTube uploader</title>
+	</head>
+	
+	<body>
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><i>upload</i>
+			<li><a href="/about">about</a></li>
+		</ul>
+
+		<form action="/api/upload.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Upload a video</legend>
+				<input type="file" name="fileToUpload" id="fileToUpload"><br>
+				video name: <input type="text" name="videoName"><br>
+				video description (optional): <textarea name="videoDesc"></textarea><br>
+				uploader name (optional): <input type="text" name="uploaderName"><br>
+				<input type="submit" value="upload Video" name="submit">
+			</fieldset>
+		</form>
+
+		<br>
+		<h3>upload notes:</h3>
+		<p>the max upload size is 100mb<br>also the maximum length is 30 minutes<br>accepted types: mp4, mov, webm</p>
+	</body>
+</html>
+
